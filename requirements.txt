@@ -1,1 +1,6 @@
-pytest>=8.0,<9.0\npandas>=2.2,<4.0\nnumpy>=1.26,<3.0\n# Optionnel sous Windows avec MetaTrader 5 installé\nMetaTrader5>=5.0.45\n
+pytest>=8.0,<10.0
+pandas>=2.2,<4.0
+numpy>=1.26,<3.0
+python-dotenv>=1.0,<2.0
+# Nécessite Windows et un terminal MetaTrader 5 installé
+MetaTrader5>=5.0.45

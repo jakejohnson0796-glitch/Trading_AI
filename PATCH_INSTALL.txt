@@ -1,0 +1,27 @@
+PATCH MT5 LECTURE SEULE — Quantum Scalper AI
+
+1. Décompresse le contenu de cette archive directement dans le dossier existant :
+   F:\TRADE_AI\quantum_scalper_ai_phase1_2\quantum_scalper_ai
+   Accepte de remplacer les fichiers homonymes.
+   Cette archive ne contient pas ton fichier .gitignore ni ton .env local.
+
+2. Dans PowerShell, depuis le dossier du projet, exécute :
+   & "C:\Users\PC\AppData\Local\Programs\Python\Python312\python.exe" -m pip install -r requirements.txt
+
+3. Vérifie que MetaTrader 5 est ouvert et connecté au compte que tu souhaites utiliser pour observer les données. Aucun identifiant/mot de passe n'est demandé par le code.
+
+4. Lance :
+   & "C:\Users\PC\AppData\Local\Programs\Python\Python312\python.exe" .\main.py
+
+5. Tests :
+   & "C:\Users\PC\AppData\Local\Programs\Python\Python312\python.exe" -m pytest -q
+
+6. Vérifie les changements avant de les publier :
+   git status
+   git diff -- .gitignore
+   git add main.py config/settings.py mt5_connector/reader.py market strategies/evaluator.py requirements.txt .env.example README.md tests PATCH_INSTALL.txt
+   git commit -m "Add read-only MT5 market diagnostics"
+   git push
+
+Sécurité : PAPER uniquement ; aucun placement d'ordre n'est présent dans ce patch.
+Ne publie pas .env, les mots de passe, ni des fichiers de données locales.
