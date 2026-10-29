@@ -1,0 +1,1 @@
+__pycache__/\n*.py[cod]\n.venv/\n.env\n*.db\n.pytest_cache/\nreports/*\n!reports/.gitkeep\ndata/*\n!data/.gitkeep\n
