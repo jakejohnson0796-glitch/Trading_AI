@@ -1,1 +1,19 @@
 __pycache__/\n*.py[cod]\n.venv/\n.env\n*.db\n.pytest_cache/\nreports/*\n!reports/.gitkeep\ndata/*\n!data/.gitkeep\n
+# Fichiers temporaires Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environnements virtuels
+.venv/
+venv/
+
+# Secrets locaux
+.env
+.env.*
+!.env.example
+
+# Bases de données locales
+data/*.db
+data/*.sqlite
+data/*.sqlite3
